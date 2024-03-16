@@ -17,3 +17,5 @@ print(desvio)
 # %%
 maximo = series.max()
 print(maximo)
+
+print('fim')
