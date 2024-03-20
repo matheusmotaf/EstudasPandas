@@ -19,7 +19,3 @@ maximo = series.max()
 print(maximo)
 
 print('fim')
-
-dff = pd.read_csv('customers.csv')
-
-print(dff)
