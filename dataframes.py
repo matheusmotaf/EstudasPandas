@@ -1,21 +1,60 @@
+# %%
 import pandas as pd
+# %%
 
+data = {
+    "nome":["teo", "nah", "lara", "maria"],
+    "sobrenome": ["calvo", "ataide", "calvo", "calvo"],
+    "idade": [31, 32, 31, 2]
+}
 
-dados = [10, 20, 42, 9, 12, 35, 24, 10, 8, 14, 21]
-print(dados)
-series = pd.Series(dados)
-#print(series)
+#%%
+data["idade"][0]
 
 # %%
-media = series.mean()
-print(media)
+df = pd.DataFrame(data)
+df
+#%%
+df["idade"].iloc[0]
 
 # %%
-desvio = series.std()
-print(desvio)
+df['sobrenome'].iloc[0]
 
 # %%
-maximo = series.max()
-print(maximo)
+df.iloc[0]
 
-print('fim')
+# %%
+df['idade']
+
+# %%
+
+df.index=[3,2,1,0]
+df
+# %%
+df["idade"][0]
+
+# %%
+df.index
+
+# %%
+df.columns
+
+# %%
+df.info(memory_usage='deep')
+
+# %%
+df.dtypes
+
+# %%
+
+df['peso'] = [80, 53, 65, 14]
+
+sumario = df.describe()
+
+sumario['peso']['mean']
+
+# %%
+df.head(2)
+
+# %%
+df.tail(2)
