@@ -9,7 +9,8 @@ data = {
 }
 
 #%%
-data["idade"][0]
+print(data["idade"][0])
+data["idade"][1]
 
 # %%
 df = pd.DataFrame(data)
