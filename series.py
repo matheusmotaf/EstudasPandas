@@ -4,7 +4,7 @@ import pandas as pd
 # %%
 
 idades = [30, 42, 90, 34]
-idades
+print(idades)
 
 # %%
 media = sum(idades) / len(idades)
