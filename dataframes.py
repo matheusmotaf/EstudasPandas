@@ -58,4 +58,4 @@ sumario['peso']['mean']
 df.head(2)
 
 # %%
-df.tail(2)
+df.tail(3)
